@@ -1,0 +1,21 @@
+<section>
+  <h1>Users Show</h1>
+  <div class="card" ng-repeat="user in usersIndex.all">
+    <a ui-sref="usersShow({ id: user.id })">
+    <!-- <img class="card-img-top" ng-src="{{ user.posterImage }}"  alt="Card image cap"> -->
+    <div class="card-block">
+      <h4 class="card-title">{{ user.username }}</h4>
+      <p class="card-text">{{ user.email }}</p>
+      </a>
+    </div>
+  </div>
+  <!-- <ul>
+    <li ng-repeat="user in usersIndex.all">
+      <a ui-sref="usersShow({ id: user.id })">
+      <img ng-src="{{ user.posterImage }}" class="u-max-full-width">
+      <h2>{{ user.username }}</h2>
+      <h4>{{ user.email }}</h4>
+      </a>
+    </li>
+  </ul> -->
+</section>

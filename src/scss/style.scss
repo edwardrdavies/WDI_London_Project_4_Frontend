@@ -1,0 +1,39 @@
+h1  {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.btn-primary, .btn-danger {
+  margin-top: 10px;
+}
+
+// REGISTER PAGE
+.regiter_form {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 9px 8px 7px;
+  width: 400px;
+
+  .instatram_title {
+    text-align: center;
+  }
+  .intro_p, .tandc_p {
+    text-align: center;
+  }
+  .register_inputs {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .sign_up_btn {
+    width: 350px;
+  }
+}
+
+.register_pg_login_section {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 9px 8px 7px;
+  width: 400px; 
+}

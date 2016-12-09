@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      One of three columns
+    </div>
+    <div class="col-sm-6">
+      <div class="regiter_form">
+        <h1 class="instatram_title">Instatram</h1>
+        <p class="intro_p">Sign up too see photo's of trains<br> from your friends</p>
+        <form novalidate ng-submit="register.submit()">
+          <div class="form-group">
+            <input type="text" placeholder="Username" class="form-control register_inputs" id="formGroupExampleInput" ng-model="register.user.username">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" class="form-control register_inputs" id="formGroupExampleInput" ng-model="register.user.email">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control register_inputs" id="formGroupExampleInput" ng-model="register.user.password">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password Confirmation" class="form-control register_inputs" id="formGroupExampleInput" ng-model="register.user.password_confirmation">
+          </div>
+
+          <button class="btn btn-primary sign_up_btn">Sign up</button>
+        </form>
+        <p class="tandc_p">By signing up you agree to only <br> post about trains.</p>
+      </div>
+      <div class="register_pg_login_section">
+        <p>Have an account? <a href="/login">Log in</a></p>
+      </div>  
+    </div>
+  </div>
+</div>
