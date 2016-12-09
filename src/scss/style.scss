@@ -1,7 +1,11 @@
-h1  {
-  padding-top: 30px;
-  padding-bottom: 30px;
+body {
+  background-color: #fafafa;
 }
+
+// h1  {
+//   padding-top: px;
+//   padding-bottom: 20px;
+// }
 
 .btn-primary, .btn-danger {
   margin-top: 10px;
@@ -12,28 +16,111 @@ h1  {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 14px;
-  padding: 9px 8px 7px;
+  padding: 9px 8px 40px;
   width: 400px;
+  margin-top: 20px;
+  background-color: #fff;
 
   .instatram_title {
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
   }
   .intro_p, .tandc_p {
     text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    color: #999;
+    font-weight: 600;
   }
   .register_inputs {
-    width: 350px;
+    width: 263px;
     margin: 0 auto;
   }
   .sign_up_btn {
-    width: 350px;
+    width: 263px;
+    margin-left: 60px;
+    background: #3897f0;
+    border-color: #3897f0;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+  }
+  .tandc_p {
+    padding-top: 15px;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
   }
 }
-
 .register_pg_login_section {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 14px;
-  padding: 9px 8px 7px;
-  width: 400px; 
+  padding: 10px 10px 10px 10px;
+  width: 400px;
+  margin-top: 10px;
+  background-color: #fff;
+
+  .have_acct_p {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.phones_img {
+  height: 700px;
+  padding-left: 90px;
+  padding-top: 10px;
+}
+
+//Login Page
+.login_form {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 8px 25px;
+  width: 400px;
+  margin-top: 20px;
+  background-color: #fff;
+  margin-top: 120px;
+
+  .instatram_title_login {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .login_in_btn {
+    width: 300px;
+    margin-left: 39px;
+    background: #3897f0;
+    border-color: #3897f0;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+  }
+
+  .login_inputs {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.have_acct_section {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
+  width: 400px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.signup_p {
+  text-align: center;
+  padding-top:10px;
 }
