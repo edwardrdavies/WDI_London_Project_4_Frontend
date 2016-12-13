@@ -28,7 +28,22 @@ function Router($stateProvider, $urlRouterProvider) {
       url: '/users/:id/edit',
       templateUrl: '/templates/usersEdit.html',
       controller: 'UsersEditController as usersEdit'
-    });
+    })
+    .state('postsIndex', {
+      url: '/posts',
+      templateUrl: '/templates/postsIndex.html',
+      controller: 'PostsIndexController as postsIndex'
+    })
+    .state('postsNew', {
+      url: '/posts/new',
+      templateUrl: '/templates/postsNew.html',
+      controller: 'PostsNewController as postsNew'
+    })
+    .state('postsShow', {
+      url: '/posts/new',
+      templateUrl: '/templates/postsShow.html',
+      controller: 'PostsShowController as postsShow'
+    }); 
 
   $urlRouterProvider.otherwise('/users');
 }

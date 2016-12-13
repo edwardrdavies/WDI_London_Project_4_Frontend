@@ -1,0 +1,10 @@
+<section>
+  <h1>Instatrams</h1>
+
+  <div ng-repeat="post in postsIndex.all">
+    <a ui-sref="postsShow({ id: post.id })">
+      <img ng-src="{{ post.image }}">
+      <p>{{ post.caption }}</p>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<section>
+  <h2 class="createapost">Create a Post</h2>
+
+  <form novalidate ng-submit="postsNew.create()">
+      <div class="row">
+        <!-- <label>Caption</label> -->
+        <input class="u-full-width captionInput" type="text" placeholder="Caption" ng-model="postsNew.post.caption">
+      </div>
+      <div class="row">
+        <!-- <label>Image</label> -->
+        <drag-drop base64="postsNew.post.base64" src="post.user.captionImage"></drag-drop>
+      </div>
+
+      <button class="btn btn-primary postBtn">Post</button>
+  </form>
+</section>
