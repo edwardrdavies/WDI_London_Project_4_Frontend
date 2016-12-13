@@ -1,0 +1,14 @@
+<section>
+  <h1>Update Post</h1>
+  <form ng-submit="postsEdit.update()">
+      <div class="row">
+        <!-- <label>Caption</label> -->
+        <input class="u-full-width captionInput" type="text" placeholder="Caption" ng-model="postsEdit.post.caption">
+      </div>
+      <div class="row">
+        <drag-drop base64="postsEdit.post.base64" src="postEdit.post.image"></drag-drop>
+      </div>
+
+      <button class="btn btn-primary postBtn">Update</button>
+  </form>
+</section>

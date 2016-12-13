@@ -40,10 +40,15 @@ function Router($stateProvider, $urlRouterProvider) {
       controller: 'PostsNewController as postsNew'
     })
     .state('postsShow', {
-      url: '/posts/new',
+      url: '/posts/:id',
       templateUrl: '/templates/postsShow.html',
       controller: 'PostsShowController as postsShow'
-    }); 
+    })
+    .state('postsEdit', {
+      url: '/posts/:id/edit',
+      templateUrl: '/templates/postsEdit.html',
+      controller: 'PostsEditController as postsEdit'
+    });
 
   $urlRouterProvider.otherwise('/users');
 }

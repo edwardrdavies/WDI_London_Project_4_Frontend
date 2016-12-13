@@ -1,8 +1,41 @@
-<h1>Post Show</h1>
+<section>
+  <div class="container">
+  <div class="row postShowSection">
+    <div class="col-sm-6">
+      <img class="ShowImg" ng-src="{{ postsShow.post.image }}">
+    </div>
+    <div class="col-sm-6 captionUsernameSection">
+      <p class="postsShowCaption">{{ postsShow.post.caption }}</p>
+      <p>{{ postsShow.post.user.username }}</p>
 
-TO DO:
+      <a ng-if="postsShow.isLoggedIn()" ui-sref="postsEdit({ id: postsShow.post.id })" class="btn btn-primary">Edit</a>
+      <button class="btn btn-danger" ng-if="postsShow.isLoggedIn()" ng-click="postsShow.delete()">Delete</button>
+      <h6 class="commentsTitle">Comments</h6>
+      <hr>
+      <ul ng-controller="PostsShowController as postsShow">
+        <li ng-repeat="comment in postsShow.post.comments">
+          <!-- <img class="circle" style="float: left;" ng-src="comment.user.image"> -->
+          <!-- <button ng-click="postsShow.destroyComment(comment)" style="float: right;">X</button> -->
+          <h6>{{ comment.body }} </h6> <p style="font-size: 14px;"><em> Posted by: {{ comment.user.username }} </em></p></li>
+      </ul>
+      <div ng-controller="CommentsNewController as commentsNew">
+        <form ng-submit="commentsNew.create()">
+          <input type="hidden" name="user_id" ng-model="commentsNew.comment.user_id">
+          <!-- <input type="hidden" name="post_id" ng-model="commentsNew.comment.post_id"> -->
+          <input type="text" name="body" placeholder="Post a comment..." ng-model="commentsNew.comment.body" class="u-full-width commentInput">
+          <!-- <button class="btn btn-primary commentBtn">Comment</button> -->
+        </form>
 
-<ol>
-  <li>Display post</li>
-  <li>Add comments</li>
-</ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</section>

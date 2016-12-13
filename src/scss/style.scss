@@ -130,7 +130,6 @@ body {
   background-color: #fff;
   border-radius: 3px;;
   width: 800px;
-  margin-left: 190px;
   margin-top: 5px;
   border: solid 1px #fafafa;
 
@@ -144,12 +143,11 @@ body {
 }
 
 .createapost {
-  padding-left: 175px;
   padding-top: 20px;
 }
 
 .captionInput {
-  margin-left: 190px;
+
   margin-top: 20px;
   width: 800px;
   height: 65px;
@@ -158,6 +156,70 @@ body {
 }
 
 .postBtn {
-  margin-left: 875px;
-  width: 100px;
+width: 100px;
+float: right;
+}
+
+.postImg {
+  width: 100%;
+}
+
+.viewPostBtn {
+  float: right;
+}
+
+.logoutBtn {
+  float: right;
+}
+
+.ShowImg {
+  width: 650px;
+  height: 675px;
+}
+
+.captionUsernameSection {
+  padding-left: 130px;
+}
+
+.postsShowCaption {
+  font-size: 20px;
+}
+
+.postShowSection {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.commentsTitle {
+  padding-top: 20px;
+}
+
+.commentInput {
+  margin-top: 280px;
+  height: 60px;
+  width: 400px;
+
+}
+.commentBtn {
+  height:50px;
+}
+
+.instatramNavTitle {
+  padding-left: 40%;
+
+}
+
+.postsIndexRow {
+  margin-top: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+.postBtn {
+  float: right;
+  margin-top: -5px;
 }

@@ -1,10 +1,29 @@
 <section>
-  <h1>Instatrams</h1>
-
-  <div ng-repeat="post in postsIndex.all">
-    <a ui-sref="postsShow({ id: post.id })">
-      <img ng-src="{{ post.image }}">
-      <p>{{ post.caption }}</p>
-    </a>
+  <div class="container">
+    <div class="row postsIndexRow">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div ng-repeat="post in postsIndex.all">
+          <div class="card">
+            <div class="card-block">
+              <a ui-sref="postsShow({ id: post.id })">
+              <h4 class="card-title">{{ post.caption }}</h4>
+              <h6 class="card-subtitle text-muted">{{ post.user.username }}</h6>
+            </div>
+            <img class="postImg" ng-src="{{ post.image }}" alt="Card image">
+              </a>
+            <div class="card-block">
+              <form ng-submit="postsIndex.like(post)">
+                <!-- {{ post.id }} -->
+                <!-- <input type="hidden" ng-value="postsIndex.newlike.post_id = post.id"> -->
+                <button class="btn btn-primary viewPostBtn" type="submit">{{post.likes_length}} Likes</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
   </div>
 </section>

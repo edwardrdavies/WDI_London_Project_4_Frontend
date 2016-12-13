@@ -9,11 +9,11 @@ function dragDrop() {
     replace: true,
     templateUrl: 'templates/dragDrop.html',
     scope: {
-      base64: '='
+      base64: '=',
+      src: '='
     },
     link($scope, element) {
 
-      $scope.base64 = null;
       $scope.active = false;
 
       reader.onload = () => {
