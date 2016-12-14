@@ -15,7 +15,7 @@ function PostsIndexController(Post, Like, $state) {
   function like(post) {
     postsIndex.newlike = {
       post_id: post.id
-    }
+    };
     console.log('hi ED', postsIndex.newlike);
     Like.save(postsIndex.newlike, () => {
       $state.go('postsIndex');

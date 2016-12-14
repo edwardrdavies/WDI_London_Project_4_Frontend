@@ -14,10 +14,12 @@
             <img class="postImg" ng-src="{{ post.image }}" alt="Card image">
               </a>
             <div class="card-block">
+              <a ui-sref="postsShow({ id: post.id })"><img class="commentIcon" src="../images/comment.png" alt=""></a>
               <form ng-submit="postsIndex.like(post)">
                 <!-- {{ post.id }} -->
                 <!-- <input type="hidden" ng-value="postsIndex.newlike.post_id = post.id"> -->
-                <button class="btn btn-primary viewPostBtn" type="submit">{{post.likes_length}} Likes</button>
+                <button class="likeBtn"><img src="../images/heart.png" alt="" class="viewPostBtn" type="submit">{{post.likes_length}}</button>
+                <!-- <button class="btn btn-primary viewPostBtn" type="submit">{{post.likes_length}} Likes</button> -->
               </form>
             </div>
           </div>

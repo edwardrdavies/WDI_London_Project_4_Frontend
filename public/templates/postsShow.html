@@ -13,7 +13,7 @@
       <h6 class="commentsTitle">Comments</h6>
       <hr>
       <ul ng-controller="PostsShowController as postsShow">
-        <li ng-repeat="comment in postsShow.post.comments">
+        <li class="commentListItems" ng-repeat="comment in postsShow.post.comments">
           <!-- <img class="circle" style="float: left;" ng-src="comment.user.image"> -->
           <!-- <button ng-click="postsShow.destroyComment(comment)" style="float: right;">X</button> -->
           <h6>{{ comment.body }} </h6> <p style="font-size: 14px;"><em> Posted by: {{ comment.user.username }} </em></p></li>

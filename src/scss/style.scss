@@ -18,7 +18,7 @@ body {
   font-size: 14px;
   padding: 9px 8px 40px;
   width: 400px;
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #fff;
 
   .instatram_title {
@@ -76,6 +76,10 @@ body {
   padding-top: 10px;
 }
 
+.registerRow {
+  padding-top: 100px;
+}
+
 //Login Page
 .login_form {
   border: 1px solid #dbdbdb;
@@ -125,6 +129,10 @@ body {
   padding-top:10px;
 }
 
+.loginRow {
+  padding-top: 100px;
+}
+
 .drag-drop {
   height: 300px;
   background-color: #fff;
@@ -157,7 +165,7 @@ body {
 
 .postBtn {
 width: 100px;
-float: right;
+
 }
 
 .postImg {
@@ -166,11 +174,11 @@ float: right;
 
 .viewPostBtn {
   float: right;
+  height: 40px;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
-.logoutBtn {
-  float: right;
-}
 
 .ShowImg {
   width: 650px;
@@ -182,11 +190,12 @@ float: right;
 }
 
 .postsShowCaption {
-  font-size: 20px;
+  font-size: 22px;
+  padding-top: 10px;
 }
 
 .postShowSection {
-  margin-top: 30px;
+  margin-top: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #fff;
@@ -200,6 +209,7 @@ float: right;
   margin-top: 280px;
   height: 60px;
   width: 400px;
+  position: fixed;
 
 }
 .commentBtn {
@@ -207,7 +217,7 @@ float: right;
 }
 
 .instatramNavTitle {
-  padding-left: 40%;
+  padding-left: 440px;
 
 }
 
@@ -215,11 +225,52 @@ float: right;
   margin-top: 80px;
 }
 
-ul {
+ul, li{
   list-style: none;
+  list-style-position:inside;
+  margin:0;
+  padding:0;
 }
 
-.postBtn {
+.homeIcon {
   float: right;
   margin-top: -5px;
+  height: 35px;
+  padding-right: 25px;
+
+}
+
+.profileIcon {
+  height: 40px;
+  margin-top: -5px;
+  float: right;
+  padding-right: 25px;
+}
+
+.postIcon {
+  height: 35px;
+  margin-top: -5px;
+  float: right;
+}
+
+.logoutBtn {
+  height: 35px;
+  margin-top: -5px;
+  float: right;
+}
+
+.likeBtn {
+  float: right;
+  background-color: #fff;
+  border: none;
+}
+
+.commentIcon {
+  height: 30px;
+  float: right;
+  padding-left: 15px;
+}
+
+.userCard {
+  margin-top: 100px;
 }
