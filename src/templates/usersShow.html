@@ -7,5 +7,17 @@
       <a ng-if="usersShow.isLoggedIn()" ng-click="usersShow.delete()" class="btn btn-danger">Delete</a>
     </div>
   </div>
-  <img class="postImg" ng-src="{{ post.image }}" alt="Card image">
+
+  <ul class="usersPostsUl">
+    <li ng-repeat="post in usersShow.user.posts">
+      <div class="card profilePageCard">
+        <img class="card-img-top profileImgShow" src="{{ post.image }}" alt="Card image cap">
+        <div class="card-block">
+          <p class="card-text">{{ post.caption }}</p>
+          <button class="likeBtn"><img src="../images/heart.png" alt="" class="viewPostBtn" type="submit">{{post.likes_length}}</button>
+          <a ui-sref="postsShow({ id: post.id })"><img class="commentIcon" src="../images/comment.png" alt=""></a>
+        </div>
+      </div>
+    </li>
+  </ul>
 </section>

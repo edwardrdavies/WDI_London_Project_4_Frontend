@@ -81,7 +81,7 @@ body {
 }
 
 //Login Page
-.login_form {
+.login_form, .updateForm {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 14px;
@@ -97,7 +97,7 @@ body {
     padding-bottom: 20px;
   }
 
-  .login_in_btn {
+  .login_in_btn, .updateBtn {
     width: 300px;
     margin-left: 39px;
     background: #3897f0;
@@ -151,7 +151,7 @@ body {
 }
 
 .createapost {
-  padding-top: 20px;
+  padding-top: 100px;
 }
 
 .captionInput {
@@ -273,4 +273,26 @@ ul, li{
 
 .userCard {
   margin-top: 100px;
+}
+
+.updateProfile {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.updatePgRow {
+  padding-top: 100px;
+}
+
+.profileImgShow {
+  width: 100%;
+}
+
+.profilePageCard {
+  width: 400px;
+}
+
+.usersPostsUl {
+  display: inline-block;
 }

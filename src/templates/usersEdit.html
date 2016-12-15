@@ -1,14 +1,23 @@
 <section>
-  <h1>Update Profile</h1>
-  <form ng-submit="usersEdit.update()">
-    <div class="form-group">
-      <label for="formGroupExampleInput">Username</label>
-      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" name="username" ng-model="usersEdit.user.username">
+  <div class="container">
+    <div class="row updatePgRow">
+      <div class="col-sm-6">
+        <img class="phones_img" src="../images/phones.png" alt="">
+      </div>
+      <div class="col-sm-6">
+        <div class="updateForm">
+          <h1 class="updateProfile">Update Profile</h1>
+          <form ng-submit="usersEdit.update()">
+            <div class="form-group">
+              <input type="text" class="form-control login_inputs" id="formGroupExampleInput" placeholder="Username" name="username" ng-model="usersEdit.user.username">
+            </div>
+            <div class="form-group">
+              <input type="text" name="email" class="form-control login_inputs" id="formGroupExampleInput2" placeholder="Email" ng-model="usersEdit.user.email">
+              <button type="submit" class="btn btn-primary updateBtn">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="formGroupExampleInput2">Email</label>
-      <input type="text" name="email" class="form-control" id="formGroupExampleInput2" placeholder="Another input" ng-model="usersEdit.user.email">
-      <button type="submit" class="btn btn-primary">Update</button>
-    </div>
-  </form>
+  </div>
 </section>
