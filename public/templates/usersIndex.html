@@ -1,5 +1,5 @@
 <section>
-  <h1>Users Show</h1>
+  <h1 class="UsersShowHeader">Users</h1>
   <ul class="list-group" ng-repeat="user in usersIndex.all">
     <a ui-sref="usersShow({ id: user.id })">
     <!-- <img class="card-img-top" ng-src="{{ user.posterImage }}"  alt="Card image cap"> -->
@@ -18,5 +18,5 @@
       <h4>{{ user.email }}</h4>
       </a>
     </li>
-  
+
 </section>

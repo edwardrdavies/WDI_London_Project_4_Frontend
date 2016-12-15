@@ -218,6 +218,7 @@ width: 100px;
 
 .instatramNavTitle {
   padding-left: 440px;
+  font-size: 26px;
 
 }
 
@@ -242,6 +243,13 @@ ul, li{
 
 .profileIcon {
   height: 40px;
+  margin-top: -5px;
+  float: right;
+  padding-right: 25px;
+}
+
+.usersIcon {
+  height: 35px;
   margin-top: -5px;
   float: right;
   padding-right: 25px;
@@ -290,9 +298,14 @@ ul, li{
 }
 
 .profilePageCard {
-  width: 400px;
+  padding: 0; 
 }
 
 .usersPostsUl {
   display: inline-block;
+}
+
+.UsersShowHeader {
+  padding-top: 100px;
+  padding-bottom: 20px;
 }

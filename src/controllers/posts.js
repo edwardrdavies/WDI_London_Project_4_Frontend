@@ -9,6 +9,9 @@ function PostsIndexController(Post, Like, $state) {
   const postsIndex = this;
 
   postsIndex.all = Post.query();
+  console.log(postsIndex.all);
+  postsIndex.all.reverse();
+  console.log(postsIndex.all);
 
   postsIndex.newlike = {};
 

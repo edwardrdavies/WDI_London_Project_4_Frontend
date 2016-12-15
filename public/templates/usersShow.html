@@ -9,8 +9,8 @@
   </div>
 
   <ul class="usersPostsUl">
-    <li ng-repeat="post in usersShow.user.posts">
-      <div class="card profilePageCard">
+    <li class="col-md-4" ng-repeat="post in usersShow.user.posts">
+      <div class="card profilePageCard col-md-12">
         <img class="card-img-top profileImgShow" src="{{ post.image }}" alt="Card image cap">
         <div class="card-block">
           <p class="card-text">{{ post.caption }}</p>

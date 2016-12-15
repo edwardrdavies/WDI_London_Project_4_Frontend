@@ -25,11 +25,11 @@
               <!-- <a class="nav-link logoutBtn" ng-click="main.logout()" ui-sref="register">Logout</a> -->
             </li>
           </ul>
-          <h1><a class="navbar-brand instatramNavTitle" href="#">Instatram</a></h1>
+          <h1><a class="navbar-brand instatramNavTitle" ui-sref="postsIndex">Instatram</a></h1>
           <img class="postIcon" src="../images/post.png" alt="" ui-sref="postsNew">
-          <img class="profileIcon" src="../images/profile.png" alt="" ui-sref="usersShow">
+          <img class="profileIcon" src="../images/profile.png" alt="" ui-sref="usersShow ({id: main.currentUser })">
+          <img class="usersIcon" src="../images/users.png" alt="" ui-sref="usersIndex">
           <img class="homeIcon" src="../images/home.png" alt="" ui-sref="postsIndex">
-
         </div>
       </div>
     </nav>
