@@ -55,5 +55,5 @@ function Router($stateProvider, $urlRouterProvider) {
       controller: 'PostsEditController as postsEdit'
     });
 
-  $urlRouterProvider.otherwise('/users');
+  $urlRouterProvider.otherwise('/');
 }
