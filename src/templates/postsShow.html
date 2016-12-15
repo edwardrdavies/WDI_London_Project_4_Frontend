@@ -5,8 +5,8 @@
       <div class="show-img" style="background-image:url('{{ postsShow.post.image }}')"></div>
     </div>
     <div class="col-lg-6 col-xs-12 captionUsernameSection">
-      <p class="postsShowCaption">{{ postsShow.post.caption }}</p>
-      <p ui-sref="usersShow ({id: main.currentUser })">{{ postsShow.post.user.username }}</p>
+      <a ui-sref="usersShow ({id: main.currentUser })"><h4 class="postsShowCaption">{{ postsShow.post.caption }}</h4>
+      <h6 ui-sref="usersShow ({id: main.currentUser })">{{ postsShow.post.user.username }}</h6></a>
 
       <a ng-if="postsShow.isLoggedIn()" ui-sref="postsEdit({ id: postsShow.post.id })" class="btn btn-primary" ng-show="postsShow.isCurrentUser">Edit</a>
       <button class="btn btn-danger" ng-if="postsShow.isLoggedIn()" ng-click="postsShow.delete()" ng-show="postsShow.isCurrentUser">Delete</button>

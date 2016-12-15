@@ -140,7 +140,7 @@ body {
 }
 
 .drag-drop {
-  height: 300px;
+  height: 500px;
   background-color: #fff;
   border-radius: 3px;;
   width: 800px;
@@ -157,7 +157,7 @@ body {
 }
 
 .createapost {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .captionInput {
@@ -170,7 +170,14 @@ body {
 }
 
 .postBtn {
-width: 100px;
+  width: 180px;
+  margin: 0;
+  background: #3897f0;
+  border-color: #3897f0;
+  color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
 
 }
 
@@ -341,5 +348,11 @@ ul, li{
   img.ShowImg {
     width: 550px;
     height: 475px;
+  }
+}
+
+@media (max-width: 792px) {
+  img.ShowImg {
+    display: none;
   }
 }

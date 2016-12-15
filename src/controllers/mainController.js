@@ -10,11 +10,9 @@ function MainController($auth, $state, $rootScope) {
 
   main.isLoggedIn = $auth.isAuthenticated;
   main.message = null;
-  if ($auth.getPayload()) {
-    return main.currentUser = $auth.getPayload().id;
-  }
 
   function logout() {
+    console.log('clicked');
     $auth.logout()
    .then(() => {
      $state.go('usersIndex');
@@ -24,6 +22,9 @@ function MainController($auth, $state, $rootScope) {
   const protectedStates = ['usersEdit'];
 
   function secureState(e, toState) {
+    if ($auth.getPayload()) {
+      return main.currentUser = $auth.getPayload().id;
+    }
     main.message = null;
     if(!$auth.isAuthenticated() && protectedStates.includes(toState.name)) {
       e.preventDefault();
