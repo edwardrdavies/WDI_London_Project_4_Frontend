@@ -1,5 +1,5 @@
 angular.module('finalProject', ['ngResource', 'ui.router', 'satellizer'])
-.constant('API_URL', window.location.hostname === 'localhost' ? 'http://localhost:3000' : '//instatram.herokuapp.com')
+.constant('API_URL', window.location.hostname === 'localhost' ? 'http://localhost:3000/api' : '//instatram.herokuapp.com/api')
   .config(Auth);
 
 Auth.$inject = ['$authProvider', 'API_URL'];
