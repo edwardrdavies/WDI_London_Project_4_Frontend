@@ -4,6 +4,11 @@ angular.module('finalProject')
 Router.$inject = ['$stateProvider', '$urlRouterProvider'];
 function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
+    .state('register', {
+      url: '/',
+      templateUrl: '/templates/register.html',
+      controller: 'RegisterController as register'
+    })
     .state('usersIndex', {
       url: '/users',
       templateUrl: '/templates/usersIndex.html',
