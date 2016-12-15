@@ -10,7 +10,9 @@ function MainController($auth, $state, $rootScope) {
 
   main.isLoggedIn = $auth.isAuthenticated;
   main.message = null;
-  main.currentUser = $auth.getPayload().id;
+  if ($auth.getPayload()) {
+    return main.currentUser = $auth.getPayload().id;
+  }
 
   function logout() {
     $auth.logout()

@@ -1,15 +1,15 @@
 <section>
   <div class="container">
   <div class="row postShowSection">
-    <div class="col-sm-6">
-      <img class="ShowImg" ng-src="{{ postsShow.post.image }}">
+    <div class="col-lg-6 col-xs-12">
+      <div class="show-img" style="background-image:url('{{ postsShow.post.image }}')"></div>
     </div>
-    <div class="col-sm-6 captionUsernameSection">
+    <div class="col-lg-6 col-xs-12 captionUsernameSection">
       <p class="postsShowCaption">{{ postsShow.post.caption }}</p>
-      <p>{{ postsShow.post.user.username }}</p>
+      <p ui-sref="usersShow ({id: main.currentUser })">{{ postsShow.post.user.username }}</p>
 
-      <a ng-if="postsShow.isLoggedIn()" ui-sref="postsEdit({ id: postsShow.post.id })" class="btn btn-primary">Edit</a>
-      <button class="btn btn-danger" ng-if="postsShow.isLoggedIn()" ng-click="postsShow.delete()">Delete</button>
+      <a ng-if="postsShow.isLoggedIn()" ui-sref="postsEdit({ id: postsShow.post.id })" class="btn btn-primary" ng-show="postsShow.isCurrentUser">Edit</a>
+      <button class="btn btn-danger" ng-if="postsShow.isLoggedIn()" ng-click="postsShow.delete()" ng-show="postsShow.isCurrentUser">Delete</button>
       <h6 class="commentsTitle">Comments</h6>
       <hr>
       <ul ng-controller="PostsShowController as postsShow">

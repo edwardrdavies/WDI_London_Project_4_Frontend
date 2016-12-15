@@ -80,6 +80,12 @@ body {
   padding-top: 100px;
 }
 
+@media (max-width: 961px) {
+  .phones_img {
+    padding-left: 30px;
+  }
+}
+
 //Login Page
 .login_form, .updateForm {
   border: 1px solid #dbdbdb;
@@ -179,14 +185,37 @@ width: 100px;
   padding-bottom: 15px;
 }
 
+.show-img {
+  background-size: cover;
+  background-position: center;
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
 
-.ShowImg {
-  width: 650px;
-  height: 675px;
+img {
+  max-width: 100%;
 }
 
 .captionUsernameSection {
-  padding-left: 130px;
+  position: static;
+  ul {
+    height: 140px;
+    overflow: scroll;
+    margin-bottom: 20px;
+  }
+  form {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: calc(50% - 20px);
+    @media (max-width: 793px) {
+      position: static;
+      width: 100%;
+    }
+  }
 }
 
 .postsShowCaption {
@@ -199,6 +228,7 @@ width: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #fff;
+  position: relative;
 }
 
 .commentsTitle {
@@ -206,11 +236,8 @@ width: 100px;
 }
 
 .commentInput {
-  margin-top: 280px;
   height: 60px;
-  width: 400px;
-  position: fixed;
-
+  width: 100%;
 }
 .commentBtn {
   height:50px;
@@ -298,7 +325,7 @@ ul, li{
 }
 
 .profilePageCard {
-  padding: 0; 
+  padding: 0;
 }
 
 .usersPostsUl {
@@ -308,4 +335,11 @@ ul, li{
 .UsersShowHeader {
   padding-top: 100px;
   padding-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+  img.ShowImg {
+    width: 550px;
+    height: 475px;
+  }
 }

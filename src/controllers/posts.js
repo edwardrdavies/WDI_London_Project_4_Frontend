@@ -47,7 +47,21 @@ PostsShowController.$inject = ['Post', '$state', '$auth'];
 function PostsShowController(Post, $state, $auth) {
   const postsShow = this;
 
-  postsShow.post = Post.get($state.params);
+  if ($auth.isAuthenticated()) {
+    postsShow.currentUserId = $auth.getPayload().id;
+  }
+  postsShow.isCurrentUser = false;
+
+  Post.get($state.params).$promise.then((post) => {
+    postsShow.post = post;
+
+    if(postsShow.currentUserId === postsShow.post.user_id) {
+      postsShow.isCurrentUser = true;
+    }
+  })
+
+
+
   console.log(postsShow.post);
   function deletePost() {
     postsShow.post.$remove(() => {
