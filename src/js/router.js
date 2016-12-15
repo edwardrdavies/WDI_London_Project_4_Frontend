@@ -6,6 +6,11 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 
   $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: '/templates/register.html',
+      controller: 'RegisterController as register'
+    })
     .state('register', {
       url: '/register',
       templateUrl: '/templates/register.html',
